@@ -4,14 +4,16 @@ import java.util.Scanner; // Scanner used to get user input
 
 public class DiceRollTracker {
 
-    int positionNumber = 0; // Integer variable used to track the position of the player on the board
-    public static int rollDice(int min, int max) {
-        return (int) ((Math.random() * (max - min)) + min);
+    static int  positionNumber = 5; // Integer variable used to track the position of the player on the board
+    static int rolledNumber;
+    public static int rollDice() {
+        rolledNumber = (int) ((Math.random() * 6) + 1);
+        return rolledNumber;
+
     }
     public static void main(String[] args) {
-
-
-
+        System.out.println("You rolled " + rollDice() + "!");
+        System.out.println("Your Position Number is now " + (positionNumber + rolledNumber) + "!");
     }
 
 }
