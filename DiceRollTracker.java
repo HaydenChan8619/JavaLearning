@@ -41,7 +41,7 @@ public class DiceRollTracker {
                     System.out.println("Your final position is " + positionNumber + "!");
                     System.exit(0);
                 } else if (answer.equals("yes")){
-                    ;
+
                 } else {
                     System.out.println("You typed an invalid input!");
                     continue;
